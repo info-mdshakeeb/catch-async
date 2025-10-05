@@ -1,0 +1,35 @@
+# Node dependencies
+node_modules/
+
+# Build outputs
+dist/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+*.pid
+*.pid.lock
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Env files
+.env
+.env.*
+
+# IDE settings
+.vscode/
+.idea/
+*.iml

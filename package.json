@@ -1,0 +1,62 @@
+{
+  "name": "catch-async",
+  "version": "0.1.0",
+  "description": "Enhanced async utility for unified error handling, retries, and lifecycle hooks.",
+  "keywords": [
+    "async",
+    "promise",
+    "error-handling",
+    "typescript",
+    "retry"
+  ],
+  "license": "MIT",
+  "author": "Shakeeb <info-mdshakeeb@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/info-mdshakeeb/catch-async.git"
+  },
+  "homepage": "https://github.com/info-mdshakeeb/catch-async#readme",
+  "bugs": {
+    "url": "https://github.com/info-mdshakeeb/catch-async/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "format": "prettier --write \"{src,test}/**/*.{ts,tsx}\"",
+    "lint": "eslint \"{src,test}/**/*.ts\"",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run clean && npm run build && npm run test && npm run typecheck"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@types/node": "^24.6.2",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.37.0",
+    "eslint-plugin-import": "^2.32.0",
+    "globals": "^16.4.0",
+    "jiti": "^2.6.1",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.45.0",
+    "vitest": "^3.2.4"
+  }
+}
