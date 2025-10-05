@@ -1,6 +1,6 @@
 {
   "name": "catch-async",
-  "version": "0.1.1",
+  "version": "1.0.2",
   "description": "Enhanced async utility for unified error handling, retries, and lifecycle hooks.",
   "keywords": [
     "async",
